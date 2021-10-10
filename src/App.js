@@ -15,6 +15,13 @@ function App() {
       <section>
         <h2>Welcome to the Redux Fundamentals example app!</h2>
       </section>
+      <section>
+        <span>Contador: 0</span>
+      </section>
+      <section>
+        <button>Incrementar</button>
+        <button>Disminuir</button>
+      </section>
     </div>
   )
 }
