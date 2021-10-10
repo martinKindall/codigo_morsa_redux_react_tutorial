@@ -1,6 +1,19 @@
 import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+
 
 function App() {
+
+  const contador = useSelector(state => state.value);
+
+  const dispatch = useDispatch()
+  const handleIncrementarContador = () => {
+    dispatch({ type: 'contador/incrementar' })
+  }
+  const handleDisminuirContador = () => {
+    dispatch({ type: 'contador/disminuir' })
+  }
+
   return (
     <div className="App">
       <nav>
@@ -16,11 +29,11 @@ function App() {
         <h2>Welcome to the Redux Fundamentals example app!</h2>
       </section>
       <section>
-        <span>Contador: 0</span>
+        <span>Contador: {contador}</span>
       </section>
       <section>
-        <button>Incrementar</button>
-        <button>Disminuir</button>
+        <button onClick={handleIncrementarContador}>Incrementar</button>
+        <button onClick={handleDisminuirContador}>Disminuir</button>
       </section>
     </div>
   )

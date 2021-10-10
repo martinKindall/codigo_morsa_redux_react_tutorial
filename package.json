@@ -11,7 +11,9 @@
     "miragejs": "^0.1.35",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.5",
     "react-scripts": "3.4.3",
+    "redux": "^4.1.1",
     "seedrandom": "^3.0.5"
   },
   "scripts": {
